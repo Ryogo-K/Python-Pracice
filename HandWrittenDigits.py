@@ -1,13 +1,7 @@
-#https://qiita.com/jedi/items/31ae12f45b560ecca646
-#https://stackoverflow.com/questions/9886274/how-can-i-convert-canvas-content-to-an-image
-
 #------------------------------------機械学習------------------------------------#
-print("モジュールをインポートしています...", end = "\r")
-
 from sklearn import datasets
 from sklearn import svm
 
-print("学習データを読み込んでいます..." + " " * 20 , end = "\r")
 digits = datasets.load_digits()
 #デフォルト：0.001
 clf = svm.SVC(gamma=0.0015, C=1)
