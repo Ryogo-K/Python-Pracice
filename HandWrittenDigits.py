@@ -3,8 +3,7 @@ from sklearn import datasets
 from sklearn import svm
 
 digits = datasets.load_digits()
-#デフォルト：0.001
-clf = svm.SVC(gamma=0.0015, C=1)
+clf = svm.SVC(gamma=0.001, C=1)
 clf.fit(digits.data, digits.target)
 
 #-----------------------------------手書きツール---------------------------------#
@@ -91,5 +90,4 @@ class Scribble:
     def run(self):
         self.window.mainloop()
 
-print(" " * 100, end = "\r")
 Scribble().run()
